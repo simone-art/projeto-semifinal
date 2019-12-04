@@ -264,6 +264,29 @@ margin-bottom: 20px;
     width: 50%;
 }
 
+#cadernoReprograma {
+    width: 900px;
+    height: 450px;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.caderno {
+    margin: 0 auto;
+
+}
+
+.btn-salvar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 1000px;
+    background-color: purple;
+    color: white;
+}
+
 
 @media (max-width: 320px){
 
