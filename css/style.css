@@ -259,9 +259,18 @@ margin-bottom: 20px;
 }
 
 .caderno-funcional {
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
     margin-top: 5px;
     width: 50%;
+}
+
+.input-carderno {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 250px;
 }
 
 #cadernoReprograma {
@@ -276,7 +285,7 @@ margin-bottom: 20px;
 
 }
 
-.btn-salvar {
+.btn-salvar, .btn-novo {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 150px;
@@ -313,5 +322,204 @@ margin-bottom: 20px;
         width: 50px;
         height: 50px;
         margin-left: 100px;
+    }
+    .container-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tempo {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 80%;
+        
+    }
+    
+    .texto-tempo {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    
+    .organizacao {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 10px;
+        
+    }    
+    .container-row-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container-imagens, .container-imagens-2 {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .programacion, .estudo, .code, .face {
+        margin: 0 auto;
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+
+@media (max-width: 375px){
+
+    .logo {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    .Nav {
+        display: none;
+        
+    }
+
+    .navbar {
+        width: 100%;
+        height: 50%;
+        background-color: black;
+    }
+
+    .hamburguer{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 50px;
+        height: 50px;
+        margin-left: 100px;
+    }
+    .container-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tempo {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 80%;
+        
+    }
+    
+    .texto-tempo {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    
+    .organizacao {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 10px;
+        
+    }    
+    .container-row-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container-imagens, .container-imagens-2 {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .programacion, .estudo, .code, .face {
+        margin: 0 auto;
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media (max-width: 425px){
+
+    .logo {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    .Nav {
+        display: none;
+        
+    }
+
+    .navbar {
+        width: 100%;
+        height: 50%;
+        background-color: black;
+    }
+
+    .hamburguer{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: right;
+        width: 50px;
+        height: 50px;
+        margin-left: 100px;
+    }
+    .container-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tempo {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 80%;
+        
+    }
+    
+    .texto-tempo {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    
+    .organizacao {
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 10px;
+        
+    }    
+    .container-row-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container-imagens, .container-imagens-2 {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .programacion, .estudo, .code, .face {
+        margin: 0 auto;
+        width: 90%;
+        height: 90%;
     }
 }

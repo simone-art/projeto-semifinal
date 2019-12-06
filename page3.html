@@ -35,7 +35,7 @@
     <section class="secao-caderno-digital">
         <div class="ferramentas">
             <h1>Ferramentas</h1>
-            <button class="cadernos">
+            <button class="btn-cadernos">
             <img src="./img/carpeta.png" alt="icone-de-cadernos">
             <p>Cadernos</p>
             </button>
@@ -51,14 +51,22 @@
             <div class="caderno-funcional">
                 <img src="./img/carpeta.png" alt="icone-de-cadernos">
                 <h2>Caderno</h2>
-                <hr>
-                <h3>Titulo</h3>
-                <hr>
             </div>
+                <div class="input-carderno">
+                    <input type="text" size="15" maxlength="30" value="Titulo" name="nombre"> 
+                </div>
+            <!-- <div class="caderno-funcional-2">
+                <h3>+ Inserir</h3>
+                <input type="text" size="30" maxlength="60" value="Nome" name="nome"> 
+                <hr>
+            </div> -->
             <div>
                 <textarea name="Reprograma" id="cadernoReprograma" cols="30" rows="10">Escreve aquí o seu texto</textarea>
             </div>
-            <button class="btn-salvar" id="salvar">Salvar</button>
+            <div id= "botaos">
+            <button id="salvar" class="btn-salvar">Salvar</button>
+            <button id="novo" class="btn-novo">Novo</button>
+            </div>
     </section>
     <script src="./script3.js"></script>
 
@@ -66,3 +74,7 @@
 </body>
 
 </html>
+
+
+
+<!-- <input type="text" size="15" maxlength="30" value="Nombre" name="nombre"> para cuadro de textos breves
