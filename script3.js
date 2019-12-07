@@ -20,9 +20,10 @@ buttonAgregar.addEventListener("click", function(evento){
     if (titulo === "") {
         error.textContent = "Digite o título da sua matéria!"
     } else {
-        let liTabela = document.createElement("li");
-        liTabela.textContent = titulo;
-        tabela.appendChild(liTabela);
+        let buttonTabela = document.createElement("button");
+        buttonTabela.textContent = titulo;
+        buttonTabela.classList.add("btn-cadernos");
+        tabela.appendChild(buttonTabela);
         tabela = "";
         error.textContent = "";
     }
