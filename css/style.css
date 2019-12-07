@@ -234,7 +234,7 @@ margin-bottom: 20px;
 
 /* //PAGE3.HTML// */
 
-.cadernos, .etiquetas, .plantillas {
+.btn-cadernos, .etiquetas, .plantillas {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -266,7 +266,7 @@ margin-bottom: 20px;
     width: 50%;
 }
 
-.input-carderno {
+.input-caderno {
     display: flex;
     flex-direction: column;
     width: 30%;

@@ -1,10 +1,28 @@
 //BUTTONCADERNO//
 
-// btnCadernos = document.getElementsByClassName("btn-cadernos")
+const buttonCadernos = document.querySelector(".btn-cadernos");
+const error = document.querySelector(".error");
 
-// btnCadernos.addEventListener("click", function (evento){
+btnCriarCadernos = document.getElementById("button-cadernos")
+// const texto = document.getElementById("adicione-caderno")
+
+btnCriarCadernos.addEventListener("click", function (evento){
+    let inputCadernoTexto = texto.value;
+    evento.preventDefault();
+    if (inputCadernoTexto === "") {
+        erro.textContent= "error"
+    } else{
+        let buttonCaderno= document.createElement("button");
+        buttonCaderno.textContent = inputCadernoTexto;
+        buttonCaderno.classList.add("input-caderno");
+        inputCadernoTexto.appendChild(buttonCaderno);
+        inputCadernoTexto = "";
+        error.textContent = "";
+    }
+
+    // console.log("criar")
     
-// })
+
 
 
 //TEXTAREA//
@@ -13,13 +31,13 @@
 
 //BUTTONSALVAR//
 
-const btnSalvar = document.getElementById("salvar")
+// const btnSalvar = document.getElementById("salvar")
 
-btnSalvar.addEventListener("click", function (evento){
-    evento.preventDefault();
-})
+// btnSalvar.addEventListener("click", function (evento){
+//     evento.preventDefault();
+//     console.log("salvar");
+// })
 
-console.log("salvar")
 
 //BUTTONNOVO/
 
