@@ -292,6 +292,8 @@ margin-bottom: 20px;
     width: 60%;
     height: 40%;
     margin-left: 50px;
+    border: 10px solid purple;
+    color: black
 }
 
 #cadernoReprograma {
@@ -304,6 +306,10 @@ margin-bottom: 20px;
 .caderno {
     margin: 0 auto;
 
+}
+
+.error {
+    margin-left: 50px;
 }
 
 .btn-salvar, .btn-novo {

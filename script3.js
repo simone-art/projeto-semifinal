@@ -18,7 +18,7 @@ buttonAgregar.addEventListener("click", function(evento){
     let titulo= tituloInput.value;
     evento.preventDefault();
     if (titulo === "") {
-        error.textContent = "Digite o título da sua matéria!"
+        error.textContent = "Digite o titulo da sua matéria!"
     } else {
         let buttonTabela = document.createElement("button");
         buttonTabela.textContent = titulo;
@@ -27,11 +27,8 @@ buttonAgregar.addEventListener("click", function(evento){
         tabela = "";
         error.textContent = "";
     }
-});
 
-
-
-
+})
 // btnCriarCadernos = document.getElementById("button-cadernos")
 
 // btnCriarCadernos.addEventListener("click", function (evento){
