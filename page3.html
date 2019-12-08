@@ -33,16 +33,22 @@
     </div>
 
     <section class="secao-caderno-digital">
-        <div class="ferramentas">
-            <h1>Ferramentas</h1>
+        <div>
+            <button id="ferramentas-geral" class="ferramentas">Ferramentas</button>
+        </div>
+        <div id="div1">
             <button id="button-cadernos" class="btn-cadernos">
             <img src="./img/carpeta.png" alt="icone-de-cadernos">
             <p>Cadernos</p>
             </button>
+        </div>
+        <div>
             <!-- <button class="etiquetas">
             <img src="./img/carpeta.png" alt="icone-de-cadernos">
             <p>Etiquetas</p>
             </button>
+        </div>
+        
             <button class="plantillas">
             <img src="./img/carpeta.png" alt="icone-de-cadernos">
             <p>Plantillas</p>
@@ -52,11 +58,11 @@
                 <img src="./img/carpeta.png" alt="icone-de-cadernos">
                 <h2>Caderno</h2>
             </div>
-                <div id="adicione-caderno" class="input-caderno">
+                <form id="adicione-caderno" class="input-caderno">
                     <input id="tituloInput" class="inputSpace" type="text" size="15" maxlength="30" value="Titulo"name="nombre"> 
                     <p class="error"></p>
                     <button id="button-agregar" class="btn-agregar">Agregar</button>
-                </div>
+                </form>
 
                 <div id="cadernos" draggable="true">
             
@@ -77,6 +83,7 @@
             <button id="novo" class="btn-novo">Novo</button>
             </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./script3.js"></script>
 
 
