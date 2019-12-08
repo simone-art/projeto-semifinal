@@ -235,7 +235,7 @@ margin-bottom: 20px;
 /* //PAGE3.HTML// */
 
 .ferramentas, .btn-cadernos, .etiquetas, .plantillas {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -245,6 +245,65 @@ margin-bottom: 20px;
     border-radius: 20px;
 }
 
+.ferramentas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    offset: 10px;
+    border: 2px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    border: 3px solid #962196;
+    color: #962196;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset;
+    transition-duration: 8s;
+}
+
+
+/* .button_horizontal {
+    margin-top: 5px;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #962196;
+    top: horizontal offset, 0;
+    right: vertical offset, 0;
+    bottom: vertical offset, 0;
+    left: vertical offset, 0;
+    transition: .8s ease;
+    will-change: transform;
+} */
+
+
+.btn-cadernos, .etiquetas, .plantillas {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 15%;
+    color: white;
+    background-color: purple;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+
+
 .secao-caderno-funcional {
     display: flex;
     flex-direction: row;
@@ -253,6 +312,7 @@ margin-bottom: 20px;
     margin-bottom: 10px;
     width: 100%;
 }
+
 
 /* .menu-desplegable {
     font-size: 90px;

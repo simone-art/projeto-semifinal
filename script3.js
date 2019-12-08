@@ -1,27 +1,86 @@
 //BUTTON FERRAMENTAS CON FUNCIONALIDAD DE MENÚ DESPLEGABLE//
 
-// const buttonFerramentas = document.getElementById("ferramentas-geral");
-// buttonFerramentas.addEventListener("click", function(){
-//     console.log("click")
-//     $(".btn-cadernos").slideDown(1000); 
-//     $(".btn-cadernos").on("click", function(){
-//     $(this).hide(btn-cadernos);
-//     })
-// })
-
 const ferramentas = document.getElementById("ferramentas-geral");
 const btnCadernos = document.getElementById("div1");
 
-
 $(function(){
     
-    $("#ferramentas-geral").click(function(){
-        console.log('click')    
-        $("#div1").slideToggle(1000);          
+    $("#div1").hide(function(){
+        console.log('click')   
+        $("#div1").hide();           
     })
 
 })
 
+$(function(){
+    
+    $(".tarea").hide(function(){  
+        $(".tarea").hide();           
+    })
+
+})
+
+$(function(){
+    
+    $(".btn-salvar").hide(function(){  
+        $(".btn-salvar").hide();           
+    })
+
+})
+
+$(function(){
+    
+    $(".btn-salvar").hide(function(){  
+        $(".btn-novo").hide();           
+    })
+
+})
+
+$(function(){
+    
+    $(".caderno-funcional").hide(function(){
+        console.log('click')   
+        $(".caderno-funcional").hide();           
+    })
+    $("#adicione-caderno").hide(function(){
+        console.log('click')   
+        $("#adicione-caderno").hide();           
+    })
+    $(".tarea").hide(function(){
+        console.log('click')   
+        $(".tarea").hide();           
+    })
+    $(".bnt-salvar").hide(function(){
+        console.log('click')   
+        $(".btn-salvar").hide();           
+    })
+    $(".bnt-novo").hide(function(){
+        console.log('click')   
+        $(".btn-novo").hide();           
+    })
+
+})
+
+$(function(){
+    $("#ferramentas-geral").click(function(){
+        console.log('click')   
+        $("#div1").slideToggle(1000); 
+                 
+    })
+
+})
+
+$(function(){
+    $("#div1").click(function(){
+        console.log('click')   
+        $(".caderno-funcional").slideToggle(2000); 
+        $("#adicione-caderno").slideToggle(4000);
+        $(".tarea").slideToggle(3500); 
+        $(".btn-salvar").slideToggle(3700); 
+        $(".btn-novo").slideToggle(4000);          
+    })
+
+})
 
 
 //BUTTONCADERNO FUNCIONALIDAD: BUTTON AGREGAR CREA UNA LI EN EL MISMO
@@ -44,10 +103,6 @@ buttonAgregar.addEventListener("click", function(evento){
         tabela.appendChild(buttonTabela);
         tabela = "";
         error.textContent = "";
-        // let linkInput = document.createElement('a');
-        // linkInput.classList.add("btn-cadernos")
-        // linkInput.textContent = titulo;
-        // tabela.appendChild(linkInput);
     }
 
 })

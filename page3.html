@@ -33,56 +33,85 @@
     </div>
 
     <section class="secao-caderno-digital">
-        <div>
-            <button id="ferramentas-geral" class="ferramentas">Ferramentas</button>
-        </div>
-        <div id="div1">
-            <button id="button-cadernos" class="btn-cadernos">
-            <img src="./img/carpeta.png" alt="icone-de-cadernos">
-            <p>Cadernos</p>
-            </button>
-        </div>
-        <div>
-            <!-- <button class="etiquetas">
+        
+            <div>
+                <button id="ferramentas-geral" class="ferramentas">Ferramentas
+                    <div class="button_horizontal"></div>
+                </button>
+            </div>
+            <div id="div1">
+                <button id="button-cadernos" class="btn-cadernos">
+                    <img src="./img/carpeta.png" alt="icone-de-cadernos">
+                    <p>Cadernos</p>
+                </button>
+            </div>
+            <!-- <div>
+            <button class="etiquetas">
             <img src="./img/carpeta.png" alt="icone-de-cadernos">
             <p>Etiquetas</p>
             </button>
-        </div>
-        
+            </div> -->
+            <!-- <div class="div3">
             <button class="plantillas">
             <img src="./img/carpeta.png" alt="icone-de-cadernos">
             <p>Plantillas</p>
-            </button> -->
-        </div>
+            </button>
+            </div> -->
+
             <div class="caderno-funcional">
                 <img src="./img/carpeta.png" alt="icone-de-cadernos">
                 <h2>Caderno</h2>
             </div>
-                <form id="adicione-caderno" class="input-caderno">
-                    <input id="tituloInput" class="inputSpace" type="text" size="15" maxlength="30" value="Titulo"name="nombre"> 
-                    <p class="error"></p>
-                    <button id="button-agregar" class="btn-agregar">Agregar</button>
-                </form>
+            <form id="adicione-caderno" class="input-caderno">
+                <input id="tituloInput" class="inputSpace" type="text" size="15" maxlength="30" value="Titulo"
+                    name="nombre">
+                <p class="error"></p>
+                <button id="button-agregar" class="btn-agregar">Agregar</button>
+            </form>
+        
 
-                <div id="cadernos" draggable="true">
-            
-                    <div id="Tabela"></div>
-                    
-                    
-                </div>
-            <!-- <div class="caderno-funcional-2">
+        <div id="cadernos" draggable="true">
+
+            <div id="Tabela"></div>
+
+
+        </div>
+        <!-- <div class="caderno-funcional-2">
                 <h3>+ Inserir</h3>
                 <input type="text" size="30" maxlength="60" value="Nome" name="nome"> 
                 <hr>
             </div> -->
-            <div>
-                <textarea name="Reprograma" id="cadernoReprograma" cols="30" rows="10">Escreve aquí o seu texto</textarea>
-            </div>
-            <div id= "botaos">
+        <div class="tarea">
+            <textarea name="Reprograma" id="cadernoReprograma" cols="30" rows="10">Escreve aquí o seu texto</textarea>
+        </div>
+        <div id="botaos">
             <button id="salvar" class="btn-salvar">Salvar</button>
             <button id="novo" class="btn-novo">Novo</button>
-            </div>
+        </div>
     </section>
+
+    <section class="container-imagens">
+            <img class="programacion" src="./img/face.jpg" alt="personas programando">
+            <img class="estudo" src="./img/study-foto.jpg" alt="persona letrero code">
+            <img class="code" src="./img/code.jpg" alt="persona letrero code">
+            <img class="face" src="./img/face.jpg" alt="rostro de mulher feliz">
+    </section>
+
+    <section class="container-imagens-2">
+            <img class="code" src="./img/code.jpg" alt="persona letrero code">
+            <img class="programacion" src="./img/face.jpg" alt="personas programando">
+            <img class="estudo" src="./img/study-foto.jpg" alt="persona letrero code">
+            <img class="face" src="./img/code.jpg" alt="rostro de mulher feliz">
+    </section>
+
+    <footer>
+        <div class="footer">
+            <img class="icone" src="./img/facebook.png" alt="icone do facebook">
+            <img  class="icone" src="./img/instagram.png" alt="icone do instagram">
+            <img class="icone" src="./img/icons8-email-64.png" alt="icone de email">
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./script3.js"></script>
 
