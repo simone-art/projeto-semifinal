@@ -129,12 +129,16 @@ buttonAgregar.addEventListener("click", function(evento){
 
 //BUTTONSALVAR//
 
-// const btnSalvar = document.getElementById("salvar")
+const btnSalvar = document.getElementById("salvar")
 
-// btnSalvar.addEventListener("click", function (evento){
-//     evento.preventDefault();
-//     console.log("salvar");
-// })
+btnSalvar.addEventListener("click", function (evento){
+    evento.preventDefault();
+    console.log("salvar");
+    // let salvarTextoFinal = document.getElementById("tituloInput");
+})
+
+const salvarTexto = document.getElementById("tituloInput")
+
 
 
 //BUTTONNOVO/
