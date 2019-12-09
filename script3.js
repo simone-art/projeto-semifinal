@@ -134,10 +134,20 @@ const btnSalvar = document.getElementById("salvar")
 btnSalvar.addEventListener("click", function (evento){
     evento.preventDefault();
     console.log("salvar");
-    // let salvarTextoFinal = document.getElementById("tituloInput");
+    capturarTexto()
 })
 
-const salvarTexto = document.getElementById("tituloInput")
+// const salvarTexto = document.getElementById("cadernoReprograma")
+const capturarTextoFinal= document.getElementById("cadernoReprograma")
+const valorDigitado = document.getElementById("valorDigitado")
+
+
+function capturarTexto (){
+    let capturandoTexto = "";
+    capturandoTexto = document. getElementById("cadernoReprograma").value;
+    console.log(capturandoTexto)
+
+}
 
 
 
