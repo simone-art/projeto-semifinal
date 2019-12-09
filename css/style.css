@@ -135,7 +135,7 @@ background-color: black;
     height: 48px;
 }
 
-/* //PAGE2.HTML// */
+/* //PAGE2.HTML//
 
 .container {
     margin: 0 auto;
@@ -181,7 +181,7 @@ background-color: black;
     width: 70px;
     height: 50px;
     color: pink;
-} */
+} 
 
 
 .container-registrese {
@@ -230,7 +230,7 @@ margin-bottom: 20px;
     margin-left: 250px;
     background-color: purple;
     color: white;
-}
+} */
 
 /* //PAGE3.HTML// */
 
@@ -560,7 +560,7 @@ margin-bottom: 20px;
         justify-content: right;
         width: 50px;
         height: 50px;
-        margin-left: 100px;
+        margin-left: 175px;
     }
     .container-row {
         display: flex;
