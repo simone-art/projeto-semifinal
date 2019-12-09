@@ -135,9 +135,20 @@ btnSalvar.addEventListener("click", function (evento){
     evento.preventDefault();
     // capturarTexto()
     let guardandoTexto = document.getElementById("cadernoReprograma").value;
-    localStorage.setItem("capturandoTexto", guardandoTexto)
-    document.getElementById("cadernoReprograma").value=""
+    // localStorage.setItem("capturandoTexto", guardandoTexto)
+    localStorage.setItem("guardandoTexto", guardandoTexto)
+    // document.getElementById("cadernoReprograma").value=""
+    // document.getElementById("tituloInput").value=""
     
+})
+
+//BTN AGREGAR//
+
+const btnAgregar = document.getElementById("button-agregar")
+btnAgregar.addEventListener("click", function (evento){
+    let capturandoTitulo = document.getElementById("tituloInput").value;
+    localStorage.setItem("capturandoTitulo", capturandoTitulo)
+
 })
 
 // const salvarTexto = document.getElementById("cadernoReprograma")
@@ -147,10 +158,19 @@ btnSalvar.addEventListener("click", function (evento){
 // const valorDigitado = document.getElementById("valorDigitado")
 
 
-function capturarTexto (){
-    let capturandoTexto = "";
-    capturandoTexto = document.getElementById("cadernoReprograma").value;
-}
+// function capturarTexto (){
+//     let capturandoTexto = "";
+//     capturandoTexto = document.getElementById("cadernoReprograma").value;
+// }
+
+// const adicioneCaderno = document.getElementById("adicione-caderno")
+
+// function capturarTitulo(){
+//     let capturandoTitulo = "";
+//     capturandoTitulo = document.getElementById("tituloInput")
+//     let titulo= tituloInput.value;
+//     adicioneCaderno.appendChild(titulo);
+// }
 
 //FUNCTION PARA GUARDAR TEXTO EN LOCALSTORAGE//
 
@@ -158,11 +178,11 @@ const capturandoTexto = document.getElementById("cadernoReprograma").value;
 // localStorage.setItem("capturandotexto", capturandoTexto)
 
 // function guardarTexto(){
-    $("#salvar").click(function(evento){
-        evento.preventDefault();        
-        let guardandoTexto = document.getElementById("cadernoReprograma").value;        
-        localStorage.setItem("capturandoTexto", guardandoTexto)
-    })
+    // $("#salvar").click(function(evento){
+    //     evento.preventDefault();        
+    //     let guardandoTexto = document.getElementById("cadernoReprograma").value;        
+    //     localStorage.setItem("capturandoTexto", guardandoTexto)
+    // })
     
 // }
 
