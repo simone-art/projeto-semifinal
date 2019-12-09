@@ -133,21 +133,38 @@ const btnSalvar = document.getElementById("salvar")
 
 btnSalvar.addEventListener("click", function (evento){
     evento.preventDefault();
-    console.log("salvar");
-    capturarTexto()
+    // capturarTexto()
+    let guardandoTexto = document.getElementById("cadernoReprograma").value;
+    localStorage.setItem("capturandoTexto", guardandoTexto)
+    document.getElementById("cadernoReprograma").value=""
+    
 })
 
 // const salvarTexto = document.getElementById("cadernoReprograma")
-const capturarTextoFinal= document.getElementById("cadernoReprograma")
-const valorDigitado = document.getElementById("valorDigitado")
+
+//FUNCTION PARA CAPTURAR TEXTO DEL TEXTAREA CON JAVASCRIPT//
+// const capturarTextoFinal= document.getElementById("cadernoReprograma")
+// const valorDigitado = document.getElementById("valorDigitado")
 
 
 function capturarTexto (){
     let capturandoTexto = "";
-    capturandoTexto = document. getElementById("cadernoReprograma").value;
-    console.log(capturandoTexto)
-
+    capturandoTexto = document.getElementById("cadernoReprograma").value;
 }
+
+//FUNCTION PARA GUARDAR TEXTO EN LOCALSTORAGE//
+
+const capturandoTexto = document.getElementById("cadernoReprograma").value;
+// localStorage.setItem("capturandotexto", capturandoTexto)
+
+// function guardarTexto(){
+    $("#salvar").click(function(evento){
+        evento.preventDefault();        
+        let guardandoTexto = document.getElementById("cadernoReprograma").value;        
+        localStorage.setItem("capturandoTexto", guardandoTexto)
+    })
+    
+// }
 
 
 
