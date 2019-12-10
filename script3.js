@@ -127,29 +127,68 @@ buttonAgregar.addEventListener("click", function(evento){
 
 // let textoCaderno = document.getElementById("cadernoReprograma")
 
-//BUTTONSALVAR//
 
-const btnSalvar = document.getElementById("salvar")
-
-btnSalvar.addEventListener("click", function (evento){
-    evento.preventDefault();
-    // capturarTexto()
-    let guardandoTexto = document.getElementById("cadernoReprograma").value;
-    // localStorage.setItem("capturandoTexto", guardandoTexto)
-    localStorage.setItem("guardandoTexto", guardandoTexto)
-    // document.getElementById("cadernoReprograma").value=""
-    // document.getElementById("tituloInput").value=""
-    
-})
 
 //BTN AGREGAR//
-
 const btnAgregar = document.getElementById("button-agregar")
 btnAgregar.addEventListener("click", function (evento){
     let capturandoTitulo = document.getElementById("tituloInput").value;
-    localStorage.setItem("capturandoTitulo", capturandoTitulo)
-
+    // localStorage.setItem("capturandoTitulo", capturandoTitulo)
+    
 })
+
+//BUTTONSALVAR//
+
+const btnSalvar = document.getElementById("salvar")
+btnSalvar.addEventListener("click", function (evento){
+    evento.preventDefault();
+    
+    // capturarTexto()
+    // let listaConteudo = []
+    let guardandoTexto = document.getElementById("cadernoReprograma").value;
+    // listaConteudo.push(guardandoTexto)
+    // localStorage.setItem("guardandoTexto", guardandoTexto)
+    // localStorage.setItem("guardandoTexto", guardandoTexto)
+    // document.getElementById("cadernoReprograma").value=""
+    // document.getElementById("tituloInput").value=""
+    capturarTituloTexto()
+    
+})
+
+//CREAR FUNCTION PARA CAPTURAR LOS DATOS DE CAPTURANDOTÍTULO E GUARDANDOTEXTO//
+function capturarTituloTexto(){
+    let capturandoTitulo = document.getElementById("tituloInput").value;
+    let guardandoTexto = document.getElementById("cadernoReprograma").value;
+    localStorage.setItem(capturandoTitulo, guardandoTexto)
+    
+}
+
+//CAPTURAR EL VALOR DEL BUTTON MATERIAS//
+
+const button = document.getElementById("Tabela");
+button.addEventListener("click", function(evento){
+    evento.preventDefault();
+    // console.log("clickou", evento.target.textContent)
+    let buttonTituloTexto = localStorage.getItem(evento.target.textContent)
+    console.log(buttonTituloTexto)
+    // let capturandoTitulo = document.getElementById("tituloInput").value;
+    // let guardandoTexto = document.getElementById("cadernoReprograma").value;
+    // localStorage.getItem("capturandoTitulo");
+    // localStorage.getItem("guardandoTexto");
+    // capturarTituloTexto()
+})
+
+// function buttonTituloTexto(){
+//     let capturandoTitulo = document.getElementById("tituloInput").value;
+//     let guardandoTexto = document.getElementById("cadernoReprograma").value;
+//     localStorage.getItem(capturarTituloTexto, guardandoTexto);
+
+    
+// }
+
+
+
+
 
 // const salvarTexto = document.getElementById("cadernoReprograma")
 
