@@ -170,61 +170,12 @@ button.addEventListener("click", function(evento){
     evento.preventDefault();
     // console.log("clickou", evento.target.textContent)
     let buttonTituloTexto = localStorage.getItem(evento.target.textContent)
-    console.log(buttonTituloTexto)
-    // let capturandoTitulo = document.getElementById("tituloInput").value;
-    // let guardandoTexto = document.getElementById("cadernoReprograma").value;
-    // localStorage.getItem("capturandoTitulo");
-    // localStorage.getItem("guardandoTexto");
-    // capturarTituloTexto()
+    // buttonTituloTexto = document.getElementById("cadernoReprograma").value;
+    console.log(buttonTituloTexto) // valor do localstorage
+    const textoArea = document.getElementById("cadernoReprograma")
+    console.log(textoArea.value) // valor do textarea
+    textoArea.value = buttonTituloTexto;    
 })
-
-// function buttonTituloTexto(){
-//     let capturandoTitulo = document.getElementById("tituloInput").value;
-//     let guardandoTexto = document.getElementById("cadernoReprograma").value;
-//     localStorage.getItem(capturarTituloTexto, guardandoTexto);
-
-    
-// }
-
-
-
-
-
-// const salvarTexto = document.getElementById("cadernoReprograma")
-
-//FUNCTION PARA CAPTURAR TEXTO DEL TEXTAREA CON JAVASCRIPT//
-// const capturarTextoFinal= document.getElementById("cadernoReprograma")
-// const valorDigitado = document.getElementById("valorDigitado")
-
-
-// function capturarTexto (){
-//     let capturandoTexto = "";
-//     capturandoTexto = document.getElementById("cadernoReprograma").value;
-// }
-
-// const adicioneCaderno = document.getElementById("adicione-caderno")
-
-// function capturarTitulo(){
-//     let capturandoTitulo = "";
-//     capturandoTitulo = document.getElementById("tituloInput")
-//     let titulo= tituloInput.value;
-//     adicioneCaderno.appendChild(titulo);
-// }
-
-//FUNCTION PARA GUARDAR TEXTO EN LOCALSTORAGE//
-
-const capturandoTexto = document.getElementById("cadernoReprograma").value;
-// localStorage.setItem("capturandotexto", capturandoTexto)
-
-// function guardarTexto(){
-    // $("#salvar").click(function(evento){
-    //     evento.preventDefault();        
-    //     let guardandoTexto = document.getElementById("cadernoReprograma").value;        
-    //     localStorage.setItem("capturandoTexto", guardandoTexto)
-    // })
-    
-// }
-
 
 
 //BUTTONNOVO/
