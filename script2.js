@@ -1,4 +1,11 @@
-//formulario-regístrese//
+
+const adicioneNome= document.getElementById("adicioneNome")
+const adicioneSobrenome= document.getElementById("adicioneSobrenome")
+const adicioneEmail= document.getElementById("adicioneEmail")
+const adicioneSenha= document.getElementById("adicioneSenha")
+const confirmeSenha= document.getElementById("confirmeSenha")
+
+
 
 // let adicioneNome= document.getElementById("adicioneNome")
 
@@ -20,10 +27,10 @@ adicioneSobrenome.addEventListener("click", function(evento){
 
 
 
-adicioneRg.addEventListener("click", function(evento){
+adicioneEmail.addEventListener("click", function(evento){
     evento.preventDefault();
-    if (adicioneRg.value.trim() == ""){
-        adicioneRg.setAttribute("placeholder","Por favor, digite o seu RG");
+    if (adicioneEmail.value.trim() == ""){
+        adicioneEmail.setAttribute("placeholder","Por favor, digite o seu email");
     } 
 })
 
@@ -43,10 +50,24 @@ confirmeSenha.addEventListener("click", function(evento){
 
 //BUTTON ENVIAR//
 
-let btnEnviar = document.getElementById("form")
+
+const btnEnviar = document.getElementById("form")
 
 btnEnviar.addEventListener("click", function (evento){
     evento.preventDefault();
+    if (adicioneNome.value=='' || adicioneSobrenome.value=='' || adicioneEmail.value=='' || adicioneSenha.value=='' || confirmeSenha.value=='') {
+        // alert("Preencha todos os dados")
+    }else {
+        alert("Cadastro enviado com sucesso!")
+        adicioneNome.value = ''
+        adicioneSobrenome.value = ''
+        adicioneEmail.value = ''
+        adicioneSenha.value = ''
+        confirmeSenha.value = ''
+    }
+  
 })
-console.log("clicou")
+            
+  
+
 
