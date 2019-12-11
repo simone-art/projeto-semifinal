@@ -2,14 +2,9 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-}
-
-
 .logo {
-    width: 50px;
-    height: 50px;
+    margin-left: 100px;
+    margin-top: 20px;
 }
 
 .hamburguer{
@@ -66,45 +61,159 @@ background-color: black;
     height: 20%;
 }
 
-.features {
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
+.botones-img {
+    width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.carrusel {
+    margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease;
 }
 
-.texto-1 {
-    font-size: 24px;
-    text-align: center;
+
+.ferramentas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    offset: 10px;
+    border: 2px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    border: 3px solid #962196;
+    color: #962196;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset;
+    transition-duration: 8s;
 }
 
-.container-row {
+
+/* .button_horizontal {
+    margin-top: 5px;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #962196;
+    top: horizontal offset, 0;
+    right: vertical offset, 0;
+    bottom: vertical offset, 0;
+    left: vertical offset, 0;
+    transition: .8s ease;
+    will-change: transform;
+} */
+
+
+.btn-cadernos, .etiquetas, .plantillas {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 15%;
+    color: white;
+    background-color: purple;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.secao-caderno-funcional {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 auto;
-    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
-.tempo {
-    margin-top: 20px;
-    width: 80%;
-}
 
-.texto-tempo {
-    font-size: 20px;
-}
+/* .menu-desplegable {
+    font-size: 90px;
+    background-color: purple;
+} */
 
-.organizacao {
-    margin-top: 20px;
-    width: 80%;
-}
-
-.container-row-2 {
+.caderno-funcional {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     margin: 0 auto;
-    text-align: center;
+    margin-top: 5px;
+    width: 50%;
+}
+
+.input-caderno {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 250px;
+}
+
+#adicione-caderno {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#button-agregar {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 60%;
+    height: 40%;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+}
+.inputSpace {
+    width: 60%;
+    height: 40%;
+    margin-left: 50px;
+    border: 10px solid purple;
+}
+
+#cadernoReprograma {
+    width: 900px;
+    height: 450px;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.caderno {
+    margin: 0 auto;
+
+}
+
+.error {
+    margin-left: 50px;
+}
+
+.btn-salvar, .btn-novo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 1000px;
+    background-color: purple;
+    color: white;
 }
 
 .container-imagens, .container-imagens-2 {
@@ -138,35 +247,33 @@ background-color: black;
     height: 48px;
 }
 
-/* INDEX.HTML (PAG 1)*/
+
 @media (max-width: 320px){
 
+    .logo {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
     
     .Nav {
         display: none;
         
     }
 
-    .logos {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px;
-    }
-
-    .logo {
-        width: 50px;
-        height: 50px;
+    .navbar {
+        width: 100%;
+        height: 50%;
+        background-color: black;
     }
 
     .hamburguer{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: right;
         width: 50px;
         height: 50px;
-        display: unset;
+        margin-left: 100px;
     }
-    
-
     .container-row {
         display: flex;
         flex-direction: column;
@@ -174,7 +281,6 @@ background-color: black;
         margin: 0 auto;
         text-align: center;
     }
-
     .tempo {
         margin-top: 20px;
         margin: 0 auto;
@@ -221,30 +327,30 @@ background-color: black;
 
 @media (max-width: 375px){
 
+    .logo {
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
     .Nav {
         display: none;
         
     }
-    
-    .logos {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px;
-    }
 
-    .logo {
-        width: 50px;
-        height: 50px;
+    .navbar {
+        width: 100%;
+        height: 50%;
+        background-color: black;
     }
 
     .hamburguer{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: right;
         width: 50px;
         height: 50px;
-        display: unset;
+        margin-left: 100px;
     }
-
     .container-row {
         display: flex;
         flex-direction: column;
@@ -252,7 +358,6 @@ background-color: black;
         margin: 0 auto;
         text-align: center;
     }
-
     .tempo {
         margin-top: 20px;
         margin: 0 auto;
@@ -298,8 +403,8 @@ background-color: black;
 @media (max-width: 425px){
 
     .logo {
-        width: 50px;
-        height: 50px;
+        margin-left: 50px;
+        margin-top: 20px;
     }
     
     .Nav {
@@ -307,17 +412,18 @@ background-color: black;
         
     }
 
-    .logos {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px;
+    .navbar {
+        width: 100%;
+        height: 50%;
+        background-color: black;
     }
 
     .hamburguer{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: right;
         width: 50px;
         height: 50px;
-        display: unset;
     }
     .container-row {
         display: flex;
@@ -365,11 +471,5 @@ background-color: black;
         margin: 0 auto;
         width: 90%;
         height: 90%;
-    }
-}
-
-@media (max-width: 1440px){
-    .logo{
-        margin-left: 40px;
     }
 }
