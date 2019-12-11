@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+
+body {
+    margin: 0;
+}
+
+
 .logo {
-    margin-left: 100px;
-    margin-top: 20px;
+    width: 50px;
+    height: 50px;
 }
 
 .hamburguer{
@@ -74,11 +80,6 @@ background-color: black;
     background-color: purple;
 }
 
-.texto-aluna{
-    font-size: 40px;
-    color: white;
-}
-
 .img-aluna {
     margin: 0 auto;
     margin-top: 30px;
@@ -89,13 +90,23 @@ background-color: black;
     height: 50%;
 }
 
+.texto-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-aluna{
+    font-size: 40px;
+    color: white;
+}
 .button-registrese {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    margin-left: 250px;
+    /* margin-left: 250px; */
     background-color: gray;
     color: white;
 }
@@ -197,27 +208,34 @@ margin-bottom: 20px;
     width: 48px;
     height: 48px;
 }
-
-
-
 @media (max-width: 320px){
 
-    .logo {
-        margin-left: 50px;
-        margin-top: 20px;
-    }
 
     .Nav {
         display: none;
-        
+
     }
 
-    .navbar {
-        width: 100%;
-        height: 50%;
-        background-color: black;
+    .logos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
     }
-    
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hamburguer{
+        width: 50px;
+        height: 50px;
+        display: unset;
+    }
+
+
     .hamburguer{
         display: inline-flex;
         flex-direction: row;
@@ -226,12 +244,12 @@ margin-bottom: 20px;
         height: 50px;
         margin-left: 100px;
     }
-    
+
     .img-header{
         width: 100%;
         height: 20%;
     }
-    
+
     .container {
         margin: 0 auto;
         margin-top: 10px;
@@ -252,24 +270,29 @@ margin-bottom: 20px;
         width: 50%;
         height: 50%;
     }
-    
+
+    .texto-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .texto-aluna{
         font-size: 20px;
         color: white;
     }
-    
-    
+
+
     .button-registrese {
         margin-top: 20px;
         margin-bottom: 20px;
         width: 75px;
         height: 50px;
         border-radius: 10px;
-        margin-left: 100px;
         background-color: gray;
         color: white;
     }
-    
+
     /* .button {
         display: flex;
         flex-direction: row;
@@ -278,8 +301,8 @@ margin-bottom: 20px;
         height: 50px;
         color: pink;
     } */
-    
-    
+
+
     .container-registrese {
         display: flex;
         flex-direction: column;
@@ -287,19 +310,19 @@ margin-bottom: 20px;
         width: 100%;
         border-radius: 50px;
         margin-bottom: 10px;
-        
+
     }
-    
+
     .computador {
         margin: 0 auto;
         margin-top: 10px;
         width: 100%;
     }
-    
+
     .texto-registrese {
         font-size: 18px;
     }
-    
+
     .registrese {
         margin: 0 auto;
         margin-top: 10px;
@@ -310,12 +333,12 @@ margin-bottom: 20px;
         width: 50%;
         background-color: white;
     }
-    
+
     .nome, .sobrenome, .rg, .senha, .confirmar {
     margin-top: 20px;
     margin-bottom: 20px;
     }
-    
+
     .btn-enviar {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -326,8 +349,8 @@ margin-bottom: 20px;
         background-color: purple;
         color: white;
     }
-    
-    
+
+
     .container-row-2 {
         display: flex;
         flex-direction: column;
@@ -343,7 +366,7 @@ margin-bottom: 20px;
         justify-content: center;
         margin: 0 auto;
     }
-    
+
     .programacion, .estudo, .code, .face {
         margin: 0 auto;
         width: 90%;
@@ -353,32 +376,35 @@ margin-bottom: 20px;
 
 @media (max-width: 375px){
 
-    .logo {
-        margin-left: 50px;
-        margin-top: 20px;
-    }
-
     .Nav {
         display: none;
-        
+
     }
 
-
-    
-    .hamburguer{
-        display: inline-flex;
+    .logos {
+        display: flex;
         flex-direction: row;
-        justify-content: right;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .logo {
         width: 50px;
         height: 50px;
-        margin-left: 150px;
     }
-    
+
+    .hamburguer{
+        width: 50px;
+        height: 50px;
+        display: unset;
+    }
+
     .img-header{
         width: 100%;
         height: 20%;
     }
-    
+
     .container {
         margin: 0 auto;
         margin-top: 10px;
@@ -396,13 +422,19 @@ margin-bottom: 20px;
         width: 50%;
         height: 50%;
     }
-    
+
+    .texto-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .texto-aluna{
         font-size: 20px;
         color: white;
     }
-    
-    
+
+
     .button-registrese {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -410,11 +442,10 @@ margin-bottom: 20px;
         height: 50px;
         border-radius: 10px;
         margin: 0 auto;
-        margin-left: 120px;
         background-color: gray;
         color: white;
     }
-    
+
     /* .button {
         display: flex;
         flex-direction: row;
@@ -423,8 +454,8 @@ margin-bottom: 20px;
         height: 50px;
         color: pink;
     } */
-    
-    
+
+
     .container-registrese {
         display: flex;
         flex-direction: column;
@@ -432,19 +463,19 @@ margin-bottom: 20px;
         width: 100%;
         border-radius: 50px;
         margin-bottom: 10px;
-        
+
     }
-    
+
     .computador {
         margin: 0 auto;
         margin-top: 10px;
-        width: 100%;
+        width: 90%;
     }
-    
+
     .texto-registrese {
         font-size: 18px;
     }
-    
+
     .registrese {
         margin: 0 auto;
         margin-top: 10px;
@@ -455,12 +486,16 @@ margin-bottom: 20px;
         width: 50%;
         background-color: white;
     }
-    
+
+    .button-registrese{
+        margin-left: 120px;
+    }
+
     .nome, .sobrenome, .rg, .senha, .confirmar {
     margin-top: 20px;
     margin-bottom: 20px;
     }
-    
+
     .btn-enviar {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -471,8 +506,8 @@ margin-bottom: 20px;
         background-color: purple;
         color: white;
     }
-    
-    
+
+
     .container-row-2 {
         display: flex;
         flex-direction: column;
@@ -488,7 +523,7 @@ margin-bottom: 20px;
         justify-content: center;
         margin: 0 auto;
     }
-    
+
     .programacion, .estudo, .code, .face {
         margin: 0 auto;
         width: 90%;
@@ -498,30 +533,36 @@ margin-bottom: 20px;
 
 @media (max-width: 425px){
 
-    .logo {
-        margin-left: 80px;
-        margin-top: 20px;
-    }
 
     .Nav {
         display: none;
-        
+
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
     }
 
     .hamburguer{
-        display: inline-flex;
-        flex-direction: row;
-        justify-content: right;
         width: 50px;
         height: 50px;
-        margin-left: 150px;
+        display: unset;
     }
-    
+
     .img-header{
         width: 100%;
         height: 20%;
     }
-    
+
     .container {
         margin: 0 auto;
         margin-top: 10px;
@@ -542,13 +583,18 @@ margin-bottom: 20px;
         width: 50%;
         height: 50%;
     }
-    
+
+    .texto-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .texto-aluna{
         font-size: 20px;
         color: white;
     }
-    
-    
+
     .button-registrese {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -560,7 +606,7 @@ margin-bottom: 20px;
         background-color: gray;
         color: white;
     }
-    
+
     /* .button {
         display: flex;
         flex-direction: row;
@@ -569,8 +615,8 @@ margin-bottom: 20px;
         height: 50px;
         color: pink;
     } */
-    
-    
+
+
     .container-registrese {
         display: flex;
         flex-direction: column;
@@ -578,47 +624,46 @@ margin-bottom: 20px;
         width: 100%;
         border-radius: 50px;
         margin-bottom: 10px;
-        
+
     }
-    
+
     .computador {
         margin: 0 auto;
         margin-top: 10px;
-        width: 100%;
+        width: 90%;
     }
-    
+
     .texto-registrese {
         font-size: 18px;
     }
-    
+
     .registrese {
         margin: 0 auto;
         margin-top: 10px;
         margin-left: 60px;
         background-color: gray;
-        margin-right: 130px;
         color: black;
         width: 50%;
         background-color: white;
     }
-    
+
     .nome, .sobrenome, .rg, .senha, .confirmar {
     margin-top: 20px;
     margin-bottom: 20px;
     }
-    
+
     .btn-enviar {
         margin-top: 20px;
         margin-bottom: 20px;
         width: 75px;
         height: 50px;
         border-radius: 10px;
-        margin-left: 100px;
+        margin-left: 80px;
         background-color: purple;
         color: white;
     }
-    
-    
+
+
     .container-row-2 {
         display: flex;
         flex-direction: column;
@@ -634,10 +679,17 @@ margin-bottom: 20px;
         justify-content: center;
         margin: 0 auto;
     }
-    
+
     .programacion, .estudo, .code, .face {
         margin: 0 auto;
         width: 90%;
         height: 90%;
+    }
+}
+
+@media (max-width: 1440px){
+
+    .logo{
+        margin-left: 20px;
     }
 }
