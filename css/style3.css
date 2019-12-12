@@ -228,7 +228,7 @@ background-color: black;
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     margin: 0 auto;
     margin-top: 20px;
     width: 90%;
