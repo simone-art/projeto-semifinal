@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 .logo {
     margin-left: 100px;
     margin-top: 20px;
@@ -40,6 +41,11 @@ background-color: black;
     font-size: 18px;
     margin-right: 20px;
     color: white;
+}
+
+#caderno-img {
+    background-image: url(../img/background9.jpg);
+    margin-bottom: 10px;
 }
 
 .caderno-digital {
@@ -101,7 +107,31 @@ background-color: black;
     font-weight: bold;
     border-radius: 0;
     box-shadow: inset;
-    transition-duration: 8s;
+    transition-duration: 0.8s;
+}
+
+
+.ferramentas:hover {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    offset: 10px;
+    border: 2px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    border: 3px solid #962196;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset;
+    transition-duration: 0.8s;
 }
 
 .div1 {
@@ -109,11 +139,14 @@ background-color: black;
     flex-direction: column;
 }
 
-.img-carpeta {
+/* .img-carpeta {
     width: 50px;
     height: 50px;
-}
+} */
 
+h2 {
+    color: white;
+}
 .btn-cadernos, .etiquetas, .plantillas {
     display: flex;
     flex-direction: row;
@@ -131,6 +164,54 @@ background-color: black;
 }
 
 
+.btn-cadernos-fin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    offset: 10px;
+    border: 2px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    border: 3px solid;
+    color: #962196;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset;
+    transition-duration: 2s;
+}
+
+.btn-cadernos-fin:hover {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    offset: 10px;
+    border: 2px;
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset;
+    transition-duration: 0.4s;
+}
+
+
+
 /* .secao-caderno-funcional {
     display: flex;
     flex-direction: row;
@@ -146,12 +227,17 @@ background-color: black;
     background-color: purple;
 } */
 
+/* #caderno-img{
+    background-image: url(../img/background4.jpg);
+} */
+
 .caderno-funcional {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     margin-top: 5px;
     width: 50%;
+
 }
 
 .img-carpeta {
@@ -400,7 +486,6 @@ background-color: black;
         flex-direction: column;
         width: 300px;
         height: 200px;
-        background-color: blue;
         /* margin-left: 250px; */
         margin-top: 30px;
     }
@@ -950,6 +1035,9 @@ background-color: black;
 
 @media (min-width: 426px) and (max-width: 768px){
 
+    .logo {
+        margin-left: 20px;
+    }
     .img-header{
         width: 100%;
         height: 20%;

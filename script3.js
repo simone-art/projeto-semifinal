@@ -99,7 +99,7 @@ buttonAgregar.addEventListener("click", function(evento){
     } else {
         let buttonTabela = document.createElement("button");
         buttonTabela.textContent = titulo;
-        buttonTabela.classList.add("btn-cadernos");
+        buttonTabela.classList.add("btn-cadernos-fin");
         tabela.appendChild(buttonTabela);
         tabela = "";
         error.textContent = "";

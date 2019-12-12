@@ -57,7 +57,7 @@ btnEnviar.addEventListener("click", function (evento){
     if (adicioneNome.value=='' || adicioneSobrenome.value=='' || adicioneEmail.value=='' || adicioneSenha.value=='' || confirmeSenha.value=='') {
         // alert("Preencha todos os dados")
     }else {
-        alert("Cadastro enviado com sucesso!")
+        alert("Registro realizado con éxito!")
         adicioneNome.value = ''
         adicioneSobrenome.value = ''
         adicioneEmail.value = ''

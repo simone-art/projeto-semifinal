@@ -99,6 +99,11 @@ background-color: black;
     width: 80%;
 }
 
+.foto-relogio{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .container-row-2 {
     display: flex;
     flex-direction: row;
