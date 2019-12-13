@@ -107,7 +107,7 @@ background-color: black;
     font-weight: bold;
     border-radius: 0;
     box-shadow: inset;
-    transition-duration: 0.8s;
+    transition-duration: 1s;
 }
 
 
@@ -131,7 +131,7 @@ background-color: black;
     font-weight: bold;
     border-radius: 0;
     box-shadow: inset;
-    transition-duration: 0.8s;
+    transition-duration: 1s;
 }
 
 .div1 {
@@ -1107,6 +1107,7 @@ h2 {
         font-weight: bold;
         margin-bottom: 20px;
         width: 180px;
+        
     }
     
     
