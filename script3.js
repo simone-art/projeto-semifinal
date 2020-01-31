@@ -2,6 +2,7 @@
 
 const ferramentas = document.getElementById("ferramentas-geral");
 const btnCadernos = document.getElementById("div1");
+const editorTexto = document.getElementById("summernote")
 
 $(function(){
     
@@ -16,6 +17,15 @@ $(function(){
     
     $(".tarea").hide(function(){  
         $(".tarea").hide();           
+    })
+
+})
+
+$(function(){
+    
+    $("#summernote").hide(function(){
+        console.log('click')   
+        $("#summernote").hide();           
     })
 
 })
@@ -50,6 +60,12 @@ $(function(){
         console.log('click')   
         $(".tarea").hide();           
     })
+
+    $("#summerote").hide(function(){
+        console.log('click')   
+        $("#summernote").hide();           
+    })
+
     $(".bnt-salvar").hide(function(){
         console.log('click')   
         $(".btn-salvar").hide();           
@@ -75,8 +91,9 @@ $(function(){
         console.log('click')   
         $(".caderno-funcional").slideToggle(2000); 
         $("#adicione-caderno").slideToggle(4000);
+        $("#summernote").slideToggle(3700);
         $(".tarea").slideToggle(3500); 
-        $(".btn-salvar").slideToggle(3700); 
+        $(".btn-salvar").slideToggle(3200); 
         $(".btn-novo").slideToggle(4000);          
     })
 
@@ -145,7 +162,7 @@ btnSalvar.addEventListener("click", function (evento){
     
     // capturarTexto()
     // let listaConteudo = []
-    let guardandoTexto = document.getElementById("cadernoReprograma").value;
+    let guardandoTexto = document.getElementById("summernote").value;
     // listaConteudo.push(guardandoTexto)
     // localStorage.setItem("guardandoTexto", guardandoTexto)
     // localStorage.setItem("guardandoTexto", guardandoTexto)
@@ -158,7 +175,7 @@ btnSalvar.addEventListener("click", function (evento){
 //CREAR FUNCTION PARA CAPTURAR LOS DATOS DE CAPTURANDOTÍTULO E GUARDANDOTEXTO//
 function capturarTituloTexto(){
     let capturandoTitulo = document.getElementById("tituloInput").value;
-    let guardandoTexto = document.getElementById("cadernoReprograma").value;
+    let guardandoTexto = document.getElementById("summernote").value;
     localStorage.setItem(capturandoTitulo, guardandoTexto)
     
 }
@@ -172,10 +189,20 @@ button.addEventListener("click", function(evento){
     let buttonTituloTexto = localStorage.getItem(evento.target.textContent)
     // buttonTituloTexto = document.getElementById("cadernoReprograma").value;
     console.log(buttonTituloTexto) // valor do localstorage
-    const textoArea = document.getElementById("cadernoReprograma")
+    const textoArea = document.getElementById("summernote")
     console.log(textoArea.value) // valor do textarea
     textoArea.value = buttonTituloTexto;    
 })
+
+// EDITOR DE TEXTO API DA SUMMERNOTE //
+
+$(document).ready(function() {
+        $('#summernote').summernote();
+});
+
+
+
+
 
 
 //BUTTONNOVO/
