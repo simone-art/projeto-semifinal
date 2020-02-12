@@ -66,6 +66,7 @@ formularioEnviar.addEventListener("submit", function (event){
         // alert("por favor, preencha todos os seus dados pessoais")
     }else {
         alert("Cadastro enviado com sucesso!")
+        window.location="page3.html";
         adicioneNome.value = ''
         adicioneSobrenome.value = ''
         adicioneEmail.value = ''
