@@ -12,7 +12,7 @@ const confirmeSenha= document.getElementById("confirmeSenha")
 adicioneNome.addEventListener("click", function(evento){
     evento.preventDefault();
     if (adicioneNome.value.trim() == ""){
-        adicioneNome.setAttribute("placeholder","Por favor, digite o seu nome");
+        // adicioneNome.setAttribute("placeholder","Por favor, digite o seu nome");
     }
 })
 
@@ -21,42 +21,49 @@ adicioneNome.addEventListener("click", function(evento){
 adicioneSobrenome.addEventListener("click", function(evento){
     evento.preventDefault();
     if (adicioneSobrenome.value.trim() == ""){
-        adicioneSobrenome.setAttribute("placeholder","Por favor, digite o seu sobrenome");
+        // adicioneSobrenome.setAttribute("placeholder","Por favor, digite o seu sobrenome");
     } 
 })
 
 
+// let adicioneEmail= document.getElementById("adicioneEmail")
 
 adicioneEmail.addEventListener("click", function(evento){
     evento.preventDefault();
     if (adicioneEmail.value.trim() == ""){
-        adicioneEmail.setAttribute("placeholder","Por favor, digite o seu email");
+        // adicioneEmail.setAttribute("placeholder","Por favor, digite o seu email");
     } 
 })
+
+// let adicioneSenha= document.getElementById("adicioneSenha")
 
 adicioneSenha.addEventListener("click", function(evento){
     evento.preventDefault();
     if (adicioneSenha.value.trim() == ""){
-        adicioneSenha.setAttribute("placeholder","Por favor, insira a sua nova senha");
+        // adicioneSenha.setAttribute("placeholder","Por favor, insira a sua nova senha");
     } 
 })
+
+// let confirmeSenha= document.getElementById("confirmeSenha")
 
 confirmeSenha.addEventListener("click", function(evento){
     evento.preventDefault();
     if (confirmeSenha.value.trim() == ""){
-        confirmeSenha.setAttribute("placeholder","Por favor, confirme a sua nova senha");
-    }  
+        // adicioneSenha.setAttribute("placeholder","Por favor, insira a sua nova senha");
+    } 
 })
 
-//BUTTON ENVIAR//
 
+const formularioEnviar = document.getElementById("form")
 
-const btnEnviar = document.getElementById("form")
-
-btnEnviar.addEventListener("click", function (evento){
-    evento.preventDefault();
-    if (adicioneNome.value=='' || adicioneSobrenome.value=='' || adicioneEmail.value=='' || adicioneSenha.value=='' || confirmeSenha.value=='') {
-        // alert("Preencha todos os dados")
+formularioEnviar.addEventListener("submit", function (event){
+    event.preventDefault();
+    if (adicioneNome.value == 0
+        || adicioneSobrenome.value == 0
+        || adicioneEmail.value == 0 
+        || adicioneSenha.value == 0 
+        || confirmeSenha.value == 0) {
+        // alert("por favor, preencha todos os seus dados pessoais")
     }else {
         alert("Cadastro enviado com sucesso!")
         adicioneNome.value = ''
@@ -65,9 +72,10 @@ btnEnviar.addEventListener("click", function (evento){
         adicioneSenha.value = ''
         confirmeSenha.value = ''
     }
+    console.log("funciona")
   
 })
-            
-  
+
+form.reset();
 
 

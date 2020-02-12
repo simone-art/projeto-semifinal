@@ -4,7 +4,7 @@
 
 
 .logo {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 20px;
 }
 
@@ -264,19 +264,19 @@ h2 {
     color: white;
 }
 
-/* #cadernoReprograma {
+#cadernoReprograma {
     width: 900px;
     height: 450px;
     /* margin-left: 250px; */
-    /* margin-top: 30px; */
-/* } */ */
-
+    margin-top: 30px;
+}
+/* 
 #summernote {
     margin-top: 30px;
     width: 450px;
     height: 450px;
-    /* margin-left: 250px; */
-}
+    margin-left: 250px;
+} */
 
 .caderno {
     margin: 0 auto;
